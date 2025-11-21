@@ -183,7 +183,7 @@ export class QuadrupleGenerator {
                 });
 
                 // 3. Llamar a la función
-                const funcToCall = node.id.name;
+                const funcToCall = node.callee.name;
                 const resultTemp = this.newTemp(); // Donde guardaremos lo que devuelva
 
                 // CALL nombreFunc, numArgs, variableDestino
